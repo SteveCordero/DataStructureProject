@@ -1,14 +1,34 @@
 public class SteveQueue {
+    //instance variables
+    private SteveNode head;
 
 
-
+    //constructors
     public SteveQueue()
+    {
+        head = null;
+    }
+
+    //brain methods
+    public void addSteveNode()
     {
 
     }
 
+    public void removeSteveNode()
+    {
 
+    }
 
+    public void printOut()
+    {
+
+    }
+
+    public void length()
+    {
+
+    }
 
     private class SteveNode{
         //instance variables
