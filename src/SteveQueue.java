@@ -72,9 +72,9 @@ public class SteveQueue {
         }
     }//this method will printout the entire current queue list
 
-    public void length()
+    public int length()
     {
-        System.out.println("Length of the Queue is: " + count);
+        return count;
     }
 
     private class SteveNode{

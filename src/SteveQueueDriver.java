@@ -12,14 +12,14 @@ public class SteveQueueDriver {
 
         queue.printOut();
         System.out.println();
-        queue.length();
+        System.out.println("The length of the queue is: " + queue.length());
 
         queue.removeFromFront();
         System.out.println();
 
         queue.printOut();
         System.out.println();
-        queue.length();
+        System.out.println("The length of the queue is: " + queue.length());
 
 
         queue.removeFromFront();
@@ -27,12 +27,12 @@ public class SteveQueueDriver {
 
         queue.addToBack(70);
         queue.printOut();
-        queue.length();
+        System.out.println("The length of the queue is: " + queue.length());
 
         queue.removeFromFront();
         System.out.println();
         queue.printOut();
-        queue.length();
+        System.out.println("The length of the queue is: " + queue.length());
 
         //queue.printOut();
     }//end main method
