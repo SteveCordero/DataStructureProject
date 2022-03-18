@@ -59,17 +59,29 @@ public class SteveQueue {
         count--;
     }
 
-    public void printOut()
+    public String printOut()
     {
-        SteveNode position  = tail.getsLink();
-        //System.out.println(head.getsData());
-        //System.out.println(tail.getsLink().getsData());
-       for(int i = 0; i < count; i++)
-       {
-            System.out.println(position.getsData());
-            System.out.println("-");
-            position = position.getsLink();
+        String ans = "";
+        if(count == 0)
+        {
+            ans = "Empty List!";
         }
+        else
+        {
+            SteveNode position  = tail.getsLink();
+            //System.out.println(head.getsData());
+            //System.out.println(tail.getsLink().getsData());
+            for(int i = 0; i < count; i++)
+            {
+//            System.out.println(position.getsData());
+//            System.out.println("-");
+                ans+= position.getsData() + "\n-\n";
+                position = position.getsLink();
+            }
+        }
+
+
+        return ans;
     }//this method will printout the entire current queue list
 
     public int length()
